@@ -14,7 +14,10 @@ Built By Server Owners for Server Owners!
 **This Plugin Aims to Implement features that allow server adminitrators and players to protect their builds from griefers and even allow players to build with set flags and permissions. 
 
 ### How to claim land:
-** Documentation writing is in progress**
+First go to top corner of your claim and type `/cerberus pos1` , then proceed to go to the opposite side of your claim and go to the bottom corner of it and type `/cerberus pos2`. then proceed with `/cerberus claim <land name>`
+
+Video Tutorial:
+`Coming in V1.0.0`
 
 # **Work in progress:**
 
