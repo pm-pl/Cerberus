@@ -6,7 +6,8 @@ An advanced land protection plugin for PocketMine-MP 5
 
 Built By Server Owners for Server Owners!
 
-
+# DEPENDENCIES:
+CerberusPM uses [Commando](https://www.github.com/CerberusPM/Commando) (the Link is a Forked Version of Commando which remains UP TO DATE with CerberusPM. 
 ## Description
 **Cerberus** is an essential tool for protecting server structures. It allows server administrators and players to easily protect their builds.
 
@@ -18,6 +19,7 @@ First go to top corner of your claim and type `/cerberus pos1` , then proceed to
 
 Video Tutorial:
 `Coming in V1.0.0`
+
 
 # **Work in progress:**
 
