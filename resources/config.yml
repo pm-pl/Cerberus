@@ -1,0 +1,46 @@
+# Cerberus Configuration 
+
+# Customizable prefix. Supports color codes
+prefix: "&l&2+&e-&6Cerberus&e-&2+&r "
+
+# Currently available languages: eng, rus
+# Specify language file name here without .yml ending. If the language file doesn't exist and is available, it will appear in the plugin folder.
+# You can create your own language files if you wish. It's possible by copying any other existing language file and translating it to your language, then specifying the file name below.
+# If you want to help us develop this plugin, consider sending translated language file to us by forking our repository and opening a pull request with your file on github: https://github.com/Levonzie/Cerberus
+language: eng
+
+# Wand
+wand-item: stone_axe # Given wand will be of this item type. Wands given before item type change will remain functional if wand-strict-item option is set to false
+# The wand item should not be food or a projectile. Items of these types can't properly set positions.
+wand-enchantments: # The wand will be enchanted
+  protection: 10
+
+wand-use-default-name: true # Whether to use the default wand name from language files
+wand-use-default-lore: true # Whether to use the default wand lore from language files
+
+# To edit wand name and lore below, first set wand-use-default-name and/or wand-use-default-lore options to false
+wand-name: "&l&gCerberus Wand" # Given wand will have this name
+wand-lore: # Wand item description
+- "&aThis is a Cerberus wand"
+- "&eUse it to claim your land"
+
+# default-timezone and date-format are used in landclaim creation date information (/cerberus info <land name>)
+default-timezone: '' # If empty or not set will detect server time zone automatically. Better set it, as automatic recognition is inaccurate. List of available timezones: https://www.php.net/manual/en/timezones.php
+date-format: "Y-m-d H:i:s" # Formatting lookup table: https://www.php.net/manual/en/datetime.format.php#refsect1-datetime.format-parameters
+
+# Claim limits
+# Here you can enable/disable landclaim count and area limits set by permissions:
+# - cerberus.command.claim.limit.count.<number> - set claim limit to number
+# - cerberus.command.claim.limit.area.<number> - maximum allowed landclaim area (in square meters)
+# Put 'unlimited' instead of number in order to disable a limit
+landclaim-count-limit: false
+default-landclaim-count-limit: 5 # This limit will be set for ones, not having any land count limit permission. Works only if landclaim-count-limit is enabled! "unlimited" works here as well
+notify-user-when-count-limit-reached: true # Notification will be sent to user when they reach the limit (i.e., claim the last land within the limit)
+
+landclaim-area-limit: false
+default-landclaim-area-limit: 10000 # In square meters
+
+# Command options
+notify-player-on-teleportation: true #Whether player who gets teleported to a landclaim should be notified that they have been teleported
+
+version: 1.0-DEV-45 # For internal use. Don't touch!

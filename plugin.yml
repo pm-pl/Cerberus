@@ -1,0 +1,83 @@
+name: Cerberus
+api: 5.0.0
+version: 1.0.1-DEV
+main: CerberusPM\Cerberus\Cerberus
+author: [ Levonzie, skyss0fly ]
+description: An advanced land protection plugin for PocketMine-MP 5
+website: https://github.com/CerberusPM/Cerberus
+
+permissions:
+  cerberus.command:
+    description: Base permission for /cerberus
+    default: op
+  cerberus.command.claim:
+    description: Permission for /cerberus claim
+    default: op
+  cerberus.command.claim.bypass_intersect:
+    description: Permission to intersect landclaims created by other players
+    default: op
+  cerberus.command.claim.count_limit.unlimited:
+    description: Permission to bypass landclaim count limit (if it's turend on) while claiming
+    default: op
+  cerberus.command.claim.area_limit.unlimited:
+    description: permission to bypass landclaim area limit (if it's turned on) while claiming
+    default: op
+  cerberus.command.flag:
+    description: Base permission for /cerberus flag
+    default: op
+  cerberus.command.help:
+    description: Permission for /cerberus help
+    default: op
+  cerberus.command.here:
+    description: Permission for /cerberus here
+    default: op
+  cerberus.command.info:
+    description: Permission for /cerberus info
+    default: op
+  cerberus.command.list:
+    description: Permission for /cerberus list
+    default: op
+  cerberus.command.list.other:
+    description: Permission to enlist landclaims owned by other players with /cerberus list <name>
+    default: op
+  cerberus.command.move:
+    description: Permission for /cerberus move
+    default: op
+  cerberus.command.remove:
+    description: Permission for /cerberus remove
+    default: op
+  cerberus.command.remove.other:
+    description: Permission to remove landclaims of other players with /cerberus remove
+    default: op
+  cerberus.command.selection:
+    description: Permission for position selection commands, /cerberus pos1 and /cerberus pos2 as well as for selection using wand, selection movement using /cerberus move and selection expansion using /cerberus expand
+    default: op
+  cerberus.command.setspawn:
+    description: Permission for /cerberus setspawn
+    default: op
+  cerberus.command.setspawn.other:
+    description: Permission to set spawnpoints for landclaims owned by others
+  cerberus.command.teleport:
+    description: Permission for /cerberus teleport
+    default: op
+  cerberus.command.teleport.other:
+    description: Permission to teleport other players to landclaims' spawnpoints
+    default: op
+  cerberus.command.teleport.to.other:
+    description: Permission to teleport to other players' landclaim spawnpoints
+    default: op
+  cerberus.command.unsetspawn:
+    description: Permission for /cerberus unsetspawn
+    default: op
+  cerberus.command.unsetspawn.other:
+    description: Permission to remove spawnpoints of other players' landclaims using /cerberus unsetspawn
+    default: op
+  cerberus.command.wand:
+    description: Permission for /cerberus wand
+    default: op
+  cerberus.command.whitelist:
+    description: Permission for /cerberus whitelist
+    default: op
+  cerberus.command.reload:
+    description: Permission for /cerberus reload
+    default: op

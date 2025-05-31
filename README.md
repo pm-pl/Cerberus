@@ -1,0 +1,27 @@
+# Cerberus
+> [!Note]
+> This Branch is a Developmental Branch and may be UNSTABLE, it is strongly recommened you download the latest releases from the stable branch
+<br>
+An advanced land protection plugin for PocketMine-MP 5 
+
+Built By Server Owners for Server Owners!
+
+
+## Description
+**Cerberus** is an essential tool for protecting server structures. It allows server administrators and players to easily protect their builds.
+
+## The Basics:
+**This Plugin Aims to Implement features that allow server adminitrators and players to protect their builds from griefers and even allow players to build with set flags and permissions. 
+
+### How to claim land:
+** Documentation writing is in progress**
+
+# **Work in progress:**
+
+## Features to Implement
+flag subcommand,
+extend subcommand,
+move subcommand
+
+## Authors
+This Plugin was Jointly Founded by Levonzie and skyss0fly. This plugin is Actively Being Maintained by skyss0fly 

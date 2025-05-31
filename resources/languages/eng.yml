@@ -1,0 +1,147 @@
+# Cerberus language file: English
+# Author: Levonzie
+
+language-name: English
+language-version: 1.0-DEV-46
+
+## Translation strings
+### Plugin - general plugin strings
+plugin.in-dev: "The plugin is currently in early development stage. We apologize, but most commands are not available at the moment."
+plugin.version: "Cerberus version: {%0}"
+plugin.selected_language: "Selected language: English"
+plugin.outdated_config: "Plugin's config.yml is outdated and has been updated automatically. The old file was backed up as {%0} If you made any changes to the config, you have to transfer them manually from the old file."
+plugin.outdated_langfile: "Selected language file (English) is outdated and has been updated automatically. The old file was backed up as {%0}"
+plugin.author: "This Plugin is Constructed by Levonzie, skyss0fly"
+
+### Language names (at the moment used in language change messages)
+lang.eng: "English"
+lang.rus: "Russian"
+
+### Miscellaneous strings
+misc.and: "and"
+
+### Command messages
+command.in-game: "&cThis command should be used in-game"
+#### Reload
+command.reload.all: "Configuration and plugin language have been successfully reloaded"
+command.reload.config: "Configuration has been reloaded"
+command.reload.lang: "Current language file ({%0}) has been reloaded"
+command.reload.lang.switch: "Language changed from {%0} to {%1}"
+command.reload.options: "The following can be reloaded: all|config|lang. If no argument specified, everything will be reloaded"
+#### Position
+command.pos.in-game: "&cYou should be in-game to run this command without position set. If you want to select position from the console please specify coordinates manually!"
+command.pos.should_select_world: "&cYou should as well specify the world name where you want the position to be set. World name cannot be figured out automatically as you are not in-game."
+command.pos.world_not_found: "&cWorld \"{%0}\" does not exist. Please check your spelling and case."
+##### Pos1
+command.pos1.selected: "&aSuccessfully selected the first position at X:{%0} Y:{%1} Z:{%2}"
+command.pos1.selected.world: "&aSuccessfully selected the first position at X:{%0} Y:{%1} Z:{%2} World: {%3}"
+##### Pos2
+command.pos2.selected: "&aSuccessfully selected the second position at X:{%0} Y:{%1} Z:{%2}"
+command.pos2.selected.world: "&aSuccessfully selected the second position at X:{%0} Y:{%1} Z:{%2} World: {%3}"
+#### Wand
+wand.name: "&l&gCerberus Wand" # Given wand will have this name
+wand.lore: # Wand item description
+- "&aThis is a Cerberus wand"
+- "&eUse it to claim your land"
+command.wand.given: "&aGave you a wand"
+command.wand.inventory_full: "&cCan't give a wand. Your inventory is full."
+#### Claim
+command.claim.select_both_positions: "&cUnable to claim. You should first select two positions!"
+command.claim.select_pos1: "&cUnable to claim. First position is not selected!"
+command.claim.select_pos2: "&cUnable to claim. Second position is not selected!"
+command.claim.world_mismatch: "&cUnable to claim. Both positions should be located in the same world!"
+command.claim.landclaim_count_limit_reached_warning: "&eWarning! The landclaim is going to be created, but your claim limit of {%0} landclaims has been reached. You won't be able to claim more."
+command.claim.landclaim_count_limit_exceeded: "&cUnable to claim. Landclaim count limit of {%0} exceeded!"
+command.claim.landclaim_area_limit_exceeded: "&cUnable to claim. Landclaim area limit of {%0} m² exceeded! Resulting landclaim area would have been {%1} m²!"
+command.claim.already_exists: "&cUnable to claim. Landclaim named {%0} already exists!"
+command.claim.intersects: "&cUnable to claim. Resulting landclaim intersects landclaim {%0} owned by {%1}!"
+command.claim.intersects.notification: "&eWarning! Resulting landclaim intersects landclaim {%0} owned by {%1}, but will be created, as you've got a bypass permission."
+command.claim.intersects.multiple: "&cUnable to claim. Resulting landclaim intersects the following landclaims:"
+command.claim.intersects.multiple.land_list_item: "&b{%0}&a{%1} owned by {%2}" # {%0} is a list marker. Numbers by default. You may put your own marker instead
+command.claim.intersects.multiple.inline_land_list_item: "&e{%0} owned by {%1}"
+command.claim.intersects.multiple.notification: "&eWarning! Resulting landclaim intersects {%0}, but will be created, as you've got a bypass permission."
+command.claim.success: "&aSuccessfully created landclaim {%0}!"
+#### Remove
+command.remove.land_does_not_exist: "&cUnable to remove. Landclaim {%0} does not exist!"
+command.remove.no_other: "&cUnable to remove. You don't have permission to delete landclaims of other players!"
+command.remove.success: "&aSuccessfully removed landclaim {%0}!"
+command.remove.other.success: "&aSuccessfully removed landclaim {%0} owned by {%1}!"
+#### Here
+command.here.current_position: "&bYour current position: &eX: &f{%0} &eY: &f{%1} &eZ: &f{%2}"
+command.here.land_here: "&aHere is the land {%0} owned by {%1}"
+command.here.no_land_here: "&eThere are no landclaims where you are!"
+command.here.multiple.land_here: "&aHere are the following landclaims:"
+command.here.multiple.land_list_item: "&b{%0}&a{%1} owned by {%2}" # {%0} is a list marker. Numbers by default. You may put your own marker instead
+#### List
+command.list.none: "&cYou own no land."
+command.list.land_list: "&bYou own {%0} landclaims: {%1}" # {%0} is a number of lanclaims, {%1} - list of landclaims
+command.list.one_land: "&bYou own one landclaim: {%0}"
+command.list.no_other: "&cYou don't have permission to view the landclaim list of other players."
+command.list.other: "&b{%0} owns {%1} landclaims: {%2}" # {%0} is an owner name, {%1} - number of landclaims, {%2} - list of landclaims
+command.list.other.none: "&c{%0} owns no land."
+command.list.other.one_land: "&b{%0} owns one landclaim: {%1}"
+#### Info
+command.info.should_specify_land_name.player: "&cYou should specify land name to get the info. To get the list of landclaims you are standing at, do: /cerberus here or /crb here"
+comamnd.info.should_specify_land_name.console: "&cYou should specify land name to get the info."
+command.info.land_does_not_exist: "&cCan't get the info. Land \"{%0}\" does not exist."
+command.info.advertisement.general: "&bDo /cerberus info <land name> or /crb i <land name> to get more info about a landclaim."
+command.info.advertisement.specific: "&bDo /cerberus info {%0} or /crb i {%0} to get more info about this landclaim."
+command.info.no_info: "&7No info"
+command.info.not_set: "&7Not set"
+command.info.info:
+- "&b--- &e{%0}&b Information ---"
+- "&bOwner: &e{%1}"
+- "&bWorld: &e{%2}"
+- "&bCreation date: &e{%3}"
+- "&bFirst position: &eX: &f{%4} &eY: &f{%5} &eZ: &f{%6}"
+- "&bSecond position: &eX: &f{%7} &eY: &f{%8} &eZ: &f{%9}"
+- "&bSpawnpoint: &eX: &f{%10} &eY: &f{%11} &eZ: &f{%12}"
+- "&bDimensions: &f{%13}&ex&f{%14}&ex&f{%15} &e(LWH)"
+- "&bArea: &e{%16} m²"
+- "&bVolume: &e{%17} m³"
+- "&b----------------------------"
+#### Setspawn
+command.setspawn.should_specify_land_name: "&cYou should specify the land which spawnpoint should be set."
+command.setspawn.land_does_not_exist: "&cUnable to set spawnpoint. Landclaim named \"{%0}\" is not found. Please, check the case."
+command.setspawn.no_other: "&cYou have no permission to set spawnpoints for landclaims owned by other players."
+command.setspawn.should_specify_position: "&cYou should specify position for the spawnpoint to be set. Your position cannot be figured out automatically, as you are not a player."
+command.setspawn.position_not_in_land: "&cSpecified position does not belong to specified landclaim. Spawnpoint should be in bounds of the landclaim it belongs to."
+command.setspawn.success: "&aThe spawnpoint for landclaim {%0} has been successfully set to &eX: &f{%1} &eY: &f{%2} &eZ: &f{%3}"
+#### Teleport
+command.teleport.to.no_other: "&cYou have no permission to teleport to landclaims owned by other players."
+command.teleport.to.no_other.no_other: "&cYou have no permission to teleport yourself and other players to landclaims owned by other players."
+command.teleport.land_does_not_exist: "&cLandclaim named \"{%0}\" does not exist. Please check the case."
+command.teleport.no_land_at_current_position: "&cUnable to teleport to the spawnpoint of the landclaim at your position. There are no landclaims where you are. To teleport to a landclaim by name do /cerberus teleport <land name> or /crb tp <land name>"
+command.teleport.to_here.no_other: "&cUnable to teleport to the spawnpoint of the landclaim at your position. There is a landclaim at your position, but it belongs to another player and you have no permission to teleport to landclaims of other players."
+command.teleport.multiple_suitable_land_at_current_pos: "&cUnable to teleport to the spawnpoint of the landclaim at your position. Multiple landclaims suitable for teleportation found."
+command.teleport.multiple_suitable_land_at_current_pos.here_ad: "Type /cerberus here or /crb here to get a list."
+command.teleport.multiple_unsuitable_land_at_current_pos: "&cUnable to teleport to the spawnpoint of the landclaim at your position. All landclaims at your current position are not suitable for teleportation."
+command.teleport.should_specify_land_name: "&cYou should specify the name of the landclaim which spawnpoint will be used for teleportation."
+command.teleport.no_other: "&cYou have no permission to teleport other players."
+command.teleport.player_not_found: "&cPlayer {%0} not found."
+command.teleport.must_be_player: "&cYou must be in-game to teleport yourself. Please specify player name to teleport a player."
+command.teleport.land_has_no_spawnpoint: "&cUnable to teleport. The spawnpoint for landclaim {%0} is not set."
+command.teleport.land_here_has_no_spawnpoint: "&cUnable to teleport. The spawnpoint for the landclaim {%0}, where you are, is not set."
+command.teleport.success: "&aYou have been successfully teleported to landclaim {%0}"
+command.teleport.success.other: "&aYou have successfully teleported {%0} to landclaim {%1}"
+#### Unsetspawn
+command.unsetspawn.should_specify_land_name: "&cYou should specify the land which spawnpoint should be unset."
+command.unsetspawn.land_does_not_exist: "&cLandclaim \"{%0}\" does not exist. Please check the case."
+command.unsetspawn.no_other: "&cYou have no permission to unset spawnpoints of other players' landclaims."
+command.unsetspawn.land_has_no_spawnpoint: "&cUnable to unset spawnpoint. Specified landclaim has not got its spawnpoint set."
+command.unsetspawn.success: "&aSuccessfully unset spawnpoint for landclaim {%0}!"
+command.unsetspawn.success.other: "&aSuccessfully unset spawnpoint for landclaim {%0} owned by {%1}!"
+### Whitelist
+command.whitelist.no_player: "&cPlayer Not Found"
+command.whitelist.success : "&aAdded {%0} to the Whitelist!"
+command.whitelist.success.other: "&aRemoved \"{%0}\" from the whitelist!"
+command.whitelist.should_specify_land_name: "&cYou should specify the land which player should be added."
+command.whitelist.should_specify_land_name.other: "%cYou should specify the land which player should be Removed."
+command.whitelist.land_does_not_exist: "&cLandclaim \"{%0}\" does not exist. Please check the case."
+command.whitelist.no_other: "&cYou have no permission to whitelist players to other players' landclaims."
+command.whitelist.land_has_no_player: "&cUnable to remove Player. Specified landclaim has not got any players whitelisted."
+command.whitelist.land_has_no_player.other: "&cUnable to add Player. Specified landclaim has not got any players whitelisted."
+command.whitelist.specify: "&cPlease Specify which Task you wish to do: (add,remove)"
+command.whitelist.invalidargs: "&cInvalid Arguments. <add,remove> expected!"
+command.whitelist.specify.land: "&cPlease Specify Land"
+command.whitelist.specify.player: "&cPlease Specify a Player"
