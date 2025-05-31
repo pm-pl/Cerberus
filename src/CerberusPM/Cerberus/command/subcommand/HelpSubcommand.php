@@ -44,5 +44,3 @@ class HelpSubcommand extends BaseSubCommand {
         //TODO
     }
 } 
- 
- ?>
