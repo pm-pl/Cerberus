@@ -1,6 +1,4 @@
 # Cerberus
-> [!Note]
-> This Branch is a Developmental Branch and may be UNSTABLE, it is strongly recommened you download the latest releases from the stable branch
 <br>
 An advanced land protection plugin for PocketMine-MP 5 
 
