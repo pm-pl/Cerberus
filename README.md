@@ -63,4 +63,4 @@ extend subcommand,
 move subcommand
 
 ## Authors
-This Plugin was Jointly Founded by Levonzie and skyss0fly. This plugin is Actively Being Maintained by skyss0fly 
+This Plugin was Jointly Founded by Levonzie and skyss0fly.
